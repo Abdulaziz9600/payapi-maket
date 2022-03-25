@@ -1,0 +1,20 @@
+.ready-boxing{
+  display: flex;
+  padding-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.ready__ready-boxing-titel{
+  color: rgba(54, 83, 107, 1);
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+}
+@include breakpoint-down(768px){
+  .ready-boxing{
+    flex-direction: column;
+  }
+}

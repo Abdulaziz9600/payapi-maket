@@ -1,0 +1,193 @@
+.payapi {
+  padding-top: 200px;
+  background-image: url(../../img/b-g-oval.png);
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position:calc(50% + 750px) calc(50% + 52px);
+}
+.payapi__simple-ui-ux {
+  display: flex;
+  align-items: center;
+}
+.payapi__simple-ux {
+  margin-right: 90px;
+}
+.payapi__simple-ux-app {
+  display: flex;
+  gap: 40px;
+}
+.payapi__simple-ux-app-img {
+  width: 386px;
+  height: 570px;
+  border-radius: 36px;
+  background-color: rgb(33, 54, 72);
+  box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+}
+.payapi__simple-ux-titel {
+  color: rgba(54, 83, 107, 1);
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+}
+.payapi__simple-ux-text {
+  width: 445px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: rgba(108, 130, 148, 1);
+}
+@include breakpoint-down(1268px){
+  .payapi__simple-ui-ux {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
+  .payapi__simple-ux-app-img {
+    width: 300px;
+    height: 500px;
+  }
+  .payapi__simple-ux {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .payapi__simple-ux-titel {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .payapi__simple-ux-text{
+    width: 573px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+@include breakpoint-down(840px){
+  .payapi__simple-ui-ux {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
+  .payapi__simple-ux-app-img {
+    width: 300px;
+    height: 500px;
+  }
+  .payapi__simple-ux {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .payapi__simple-ux-titel {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .payapi__simple-ux-text{
+    width: 573px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+@include breakpoint-down(768px){
+  .payapi__simple-ui-ux {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
+  .payapi__simple-ux-app-img {
+    width: 200px;
+    height: 400px;
+  }
+  .payapi__simple-ux {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .payapi__simple-ux-titel {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .payapi__simple-ux-text{
+    width: 573px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+@include breakpoint-down(575px){
+  .payapi__simple-ui-ux {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
+  .payapi__simple-ux-app-img {
+    width: 200px;
+    height: 400px;
+  }
+  .payapi__simple-ux {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .payapi__simple-ux-titel {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .payapi__simple-ux-text{
+    width: 573px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+@include breakpoint-down(575px){
+  .payapi__simple-ui-ux {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
+  .payapi__simple-ux-app-img {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+  }
+  .payapi__simple-ux {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .payapi__simple-ux-titel {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .payapi__simple-ux-text{
+    width: 320px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,46 @@
+.service__service-list{
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  text-align: center;
+  padding-top: 140px;
+}
+.service__service-text{
+  width: 350px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+@include breakpoint-down(768px){
+  .service__service-list{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .service__service-text{
+    width: 223px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@include breakpoint-down(375px){
+  .service__service-list{
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .service__service-titel{
+    text-align: center;
+  }
+  .service__service-text{
+    max-width: 328px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

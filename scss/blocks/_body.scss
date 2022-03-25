@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(237, 243, 248);
+  background-image: url(../../img/b-g-oval.png);
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: calc(50% + 514px) -240px;
+}
+@include breakpoint-down(768px) {
+  body {   
+    background-position: calc(50% + 0px) -606px;
+    background-size: 949px 949px;
+  }
+}

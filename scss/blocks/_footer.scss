@@ -1,0 +1,43 @@
+.footer{
+  background-color: rgba(27, 38, 47, 1);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(../../img/b-g-oval.png);
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: calc(50% + 682px) calc(50% + 199px);
+}
+.footer__site-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__site-footer-iner{
+  display: flex;
+  align-items: center;
+}
+.footer__network-list{
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+.footer__network-img {
+  width: 24px;
+  height: 24px;
+}
+.footer__network-img:active {
+  filter: invert(38%) sepia(9%) saturate(4088%) hue-rotate(286deg) brightness(93%) contrast(94%);
+}
+@include breakpoint-down(375px){
+
+  .footer__site-footer{
+flex-direction: column;
+  }
+  .footer__site-footer-iner{
+flex-direction: column;
+gap: 40px;
+  }
+  .footer__network-list{
+    margin-top: 40px;
+  }
+}
