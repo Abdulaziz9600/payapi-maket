@@ -621,8 +621,8 @@ body {
 
 @media only screen and (max-width: 375px) {
   .hero-button {
-    width: 320px;
-    margin-left: 40px;
+    max-width: 250px;
+    margin-left: 70px;
     text-align: center;
     position: absolute;
     left: 157px;
@@ -645,6 +645,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 60px;
   padding-bottom: 80px;
 }
 
@@ -677,10 +678,48 @@ body {
 }
 
 .hero__hero-img {
-  width: 386px;
-  height: 610px;
-  padding-top: 60px;
+  display: block;
+  width: 300px;
+  height: auto;
   border-radius: 36px;
+}
+
+@media only screen and (max-width: 910px) {
+  .hero__site-hero-titel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero__site-hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero__site-hero-titel {
+    max-width: 573px;
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .hero__hero-img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 36px;
+  }
+  .form-hero {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__site-hero-contact {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -692,6 +731,7 @@ body {
   }
   .hero__site-hero-titel {
     max-width: 573px;
+    text-align: center;
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -699,8 +739,9 @@ body {
     line-height: 56px;
   }
   .hero__hero-img {
+    display: block;
     width: 300px;
-    height: 400px;
+    height: auto;
     margin-top: 20px;
     border-radius: 36px;
   }
@@ -764,7 +805,7 @@ body {
 
 @media only screen and (max-width: 460px) {
   .form-hero__hero-form-emil {
-    width: 370px;
+    max-width: 370px;
     padding-right: 46px;
     padding-bottom: 16px;
     padding-left: 56px;
@@ -774,8 +815,8 @@ body {
 
 @media only screen and (max-width: 375px) {
   .form-hero__hero-form-emil {
-    max-width: 320px;
-    margin-left: 20px;
+    max-width: 250px;
+    margin-left: 46px;
     padding-right: 46px;
     padding-bottom: 16px;
     padding-left: 56px;
@@ -815,7 +856,7 @@ body {
 }
 
 .colleague__colleague-text {
-  width: 445px;
+  max-width: 445px;
   font-family: 'Public Sans';
   color: #fbfcfe;
   font-style: normal;
@@ -878,6 +919,53 @@ body {
   height: 27px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .colleague__company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .colleague__colleague-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .colleague__colleague-about {
+    text-align: center;
+  }
+  .colleague__colleague-titel {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .colleague__colleague-text {
+    max-width: 456px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .colleague__colleague-about-link {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .colleague {
     background-position: calc(50% - 0px) calc(50% - 450px);
@@ -903,8 +991,10 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .colleague__colleague-titel {
+  .colleague__colleague-about {
     text-align: center;
+  }
+  .colleague__colleague-titel {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -912,20 +1002,19 @@ body {
     line-height: 56px;
   }
   .colleague__colleague-text {
-    width: 456px;
+    max-width: 456px;
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 28px;
-    text-align: center;
-  }
-  .colleague__colleague-about-link {
-    margin-left: 180px;
   }
 }
 
 @media only screen and (max-width: 375px) {
+  .colleague__colleague-about {
+    text-align: center;
+  }
   .colleague__colleague-titel {
     margin-left: 20px;
     margin-top: 40px;
@@ -936,16 +1025,13 @@ body {
     line-height: 36px;
   }
   .colleague__colleague-text {
-    width: 327px;
+    max-width: 327px;
     margin-left: 20px;
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 28px;
-  }
-  .colleague__colleague-about-link {
-    margin-left: 130px;
   }
 }
 
@@ -979,7 +1065,7 @@ body {
 }
 
 .easy__code-text {
-  width: 445px;
+  max-width: 445px;
   color: #6c8294;
   font-family: 'Public Sans';
   font-style: normal;
@@ -988,15 +1074,25 @@ body {
   line-height: 28px;
 }
 
+@media only screen and (max-width: 960px) {
+  .easy__easy-code {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .easy__easy-code {
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .easy__code-titel {
-    text-align: center;
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -1004,8 +1100,7 @@ body {
     line-height: 56px;
   }
   .easy__code-text {
-    width: 573px;
-    text-align: center;
+    max-width: 573px;
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 400;
@@ -1015,6 +1110,9 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
+  .easy__easy-code {
+    text-align: center;
+  }
   .easy__code-titel {
     text-align: center;
     font-family: 'DM Serif Display';
@@ -1024,7 +1122,7 @@ body {
     line-height: 36px;
   }
   .easy__code-text {
-    width: 320px;
+    max-width: 320px;
     text-align: center;
     font-family: 'Public Sans';
     font-style: normal;
@@ -1168,7 +1266,7 @@ body {
   }
   .payapi__simple-ux-app-img {
     width: 200px;
-    height: 400px;
+    height: auto;
   }
   .payapi__simple-ux {
     margin-right: auto;
@@ -1202,11 +1300,11 @@ body {
   }
   .payapi__simple-ux-app-img {
     width: 200px;
-    height: 400px;
+    height: auto;
+    text-align: center;
   }
   .payapi__simple-ux {
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
   }
   .payapi__simple-ux-titel {
     margin-right: auto;
@@ -1214,7 +1312,7 @@ body {
     text-align: center;
   }
   .payapi__simple-ux-text {
-    width: 573px;
+    max-width: 320px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -1227,37 +1325,37 @@ body {
 }
 
 @media only screen and (max-width: 575px) {
-  .payapi__simple-ui-ux {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    padding-top: 40px;
-  }
-  .payapi__simple-ux-app-img {
-    width: 200px;
-    height: 300px;
+  .payapi__simple-ux {
     text-align: center;
   }
-  .payapi__simple-ux {
-    margin-right: auto;
-    margin-left: auto;
+  .payapi__simple-ux-app-img {
+    max-width: 150px;
+    border-radius: 26px;
+    height: auto;
+    text-align: center;
   }
-  .payapi__simple-ux-titel {
-    margin-right: auto;
+}
+
+@media only screen and (max-width: 375px) {
+  .payapi__simple-ux-app {
+    gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: auto;
+    margin-right: auto;
+  }
+  .payapi__simple-ux {
+    text-align: center;
+  }
+  .payapi__simple-ux-app-img {
+    width: 150px;
+    border-radius: 26px;
+    height: auto;
     text-align: center;
   }
   .payapi__simple-ux-text {
-    width: 320px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: 'Public Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 28px;
+    max-width: 300px;
   }
 }
 
@@ -1272,7 +1370,7 @@ body {
 }
 
 .service__service-text {
-  width: 350px;
+  max-width: 350px;
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 400;
@@ -1281,12 +1379,28 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .service__service-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .service__service-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service__service-text {
+    max-width: 223px;
     margin-right: auto;
     margin-left: auto;
   }
-  .service__service-text {
-    width: 223px;
+}
+
+@media only screen and (max-width: 620px) {
+  .service__service-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1341,12 +1455,29 @@ body {
   line-height: 56px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .ready-boxing {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .ready-boxing {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .ready__ready-boxing-titel {
+    text-align: center;
+    margin-left: 50px;
   }
 }
 

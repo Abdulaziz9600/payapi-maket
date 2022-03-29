@@ -107,7 +107,7 @@
   }
   .payapi__simple-ux-app-img {
     width: 200px;
-    height: 400px;
+    height: auto;
   }
   .payapi__simple-ux {
     margin-right: auto;
@@ -137,11 +137,11 @@
   }
   .payapi__simple-ux-app-img {
     width: 200px;
-    height: 400px;
+    height: auto;
+    text-align: center;
   }
   .payapi__simple-ux {
-    margin-right: auto;
-    margin-left: auto;
+   text-align: center;
   }
   .payapi__simple-ux-titel {
     margin-right: auto;
@@ -149,7 +149,7 @@
     text-align: center;
   }
   .payapi__simple-ux-text{
-    width: 573px;
+    max-width: 320px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -161,33 +161,33 @@
   }
 }
 @include breakpoint-down(575px){
-  .payapi__simple-ui-ux {
-    flex-direction: column-reverse;
-    padding-top: 40px;
-  }
-  .payapi__simple-ux-app-img {
-    width: 200px;
-    height: 300px;
+  .payapi__simple-ux {
+    text-align: center;
+   }
+  .payapi__simple-ux-app-img{
+    max-width: 150px;
+    border-radius: 26px;
+    height: auto;
     text-align: center;
   }
-  .payapi__simple-ux {
-    margin-right: auto;
+}
+@include breakpoint-down(375px){
+  .payapi__simple-ux-app {
+    gap: 10px;
+    justify-content: center;
     margin-left: auto;
+    margin-right: auto;
   }
-  .payapi__simple-ux-titel {
-    margin-right: auto;
-    margin-left: auto;
+  .payapi__simple-ux {
+    text-align: center;
+   }
+  .payapi__simple-ux-app-img{
+    width: 150px;
+    border-radius: 26px;
+    height: auto;
     text-align: center;
   }
   .payapi__simple-ux-text{
-    width: 320px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: 'Public Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 28px;
+    max-width: 300px;
   }
 }

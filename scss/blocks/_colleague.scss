@@ -21,7 +21,7 @@
   line-height: 56px;
 }
 .colleague__colleague-text {
-  width: 445px;
+  max-width: 445px;
   font-family: 'Public Sans';
   color: rgba(251, 252, 254, 1);
   font-style: normal;
@@ -72,6 +72,44 @@
   width: 140px;
   height:27px;
 }
+@include breakpoint-down(1000px){
+  .colleague__company {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .colleague__colleague-list {
+    justify-content: center;
+    gap: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+  }
+  .colleague__colleague-about{
+    text-align: center;
+  }
+  .colleague__colleague-titel {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .colleague__colleague-text {
+    max-width: 456px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .colleague__colleague-about-link{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @include breakpoint-down(768px) {
   
   .colleague {
@@ -90,8 +128,10 @@
     margin-left: auto;
     flex-wrap: wrap;
   }
-  .colleague__colleague-titel {
+  .colleague__colleague-about{
     text-align: center;
+  }
+  .colleague__colleague-titel {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -99,19 +139,18 @@
     line-height: 56px;
   }
   .colleague__colleague-text {
-    width: 456px;
+    max-width: 456px;
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 28px;
-    text-align: center;
-  }
-  .colleague__colleague-about-link{
-    margin-left: 180px;
   }
 }
 @include breakpoint-down(375px) {
+  .colleague__colleague-about{
+    text-align: center;
+  }
   .colleague__colleague-titel {
     margin-left: 20px;
     margin-top: 40px;
@@ -122,16 +161,13 @@
     line-height: 36px;
   }
   .colleague__colleague-text {
-    width: 327px;
+    max-width: 327px;
     margin-left: 20px;
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 28px;
-  }
-  .colleague__colleague-about-link{
-    margin-left: 130px;
   }
 }
 @include breakpoint-down(375px){
